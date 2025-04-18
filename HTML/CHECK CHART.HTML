@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Scoops - Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-pink-50">
+
+    <nav class="bg-pink-300 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">🍦 Sweet Scoops</h1>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          
+        </ul>
+      </nav>
+      
+
+  <section class="max-w-3xl mx-auto p-8">
+    <h2 class="text-2xl font-bold mb-6">Your Cart</h2>
+    <ul class="space-y-4">
+      <li class="flex justify-between items-center bg-white p-4 rounded shadow">
+        <span>🍦 Vanilla Scoop</span>
+        <span>$3.00</span>
+      </li>
+      <li class="flex justify-between items-center bg-white p-4 rounded shadow">
+        <span>🍓 Strawberry Scoop</span>
+        <span>$3.25</span>
+      </li>
+    </ul>
+    <div class="text-right mt-6">
+      <strong>Total: $6.25</strong>
+      <button onclick="showcartMessage()" class="ml-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Checkout</button>
+    </div>
+  </section>
+<script>
+  function showcartMessage() {
+        alert("Processing....!");
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  document.addEventListener("click", function(e) {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight }
+    });
+  });
+</script>
+
+
+<footer style="background-color: #f8f8f8;
+ padding: 20px 0;
+ text-align: center;
+ color: #333;
+ border-top: 1px solid #ddd;
+ margin-top: 50px;">
+    <div style="max-width: 1000px; margin: auto;">
+        <p style="margin: 5px 0;">&copy; 2025 <strong>Sweet Scoops</strong>. All rights reserved.</p>
+        <p style="margin: 5px 0;">Created by <strong>Kinza Tanweer</strong> – Student of <strong>Gujrat University, Main Campus</strong>.</p>
+        <p style="margin: 5px 0; font-size: 14px;">This website is a part of a university project.</p>
+        
+
+        <div style="margin-top: 10px;">
+            <a href="facebook.pdf" style="margin: 0 10px; color: black;  none;">Facebook</a> 
+            <a href="Instagram.pdf" style="margin: 0 10px; color: black;: none;">Instagram</a> 
+            <a href="contact.pdf" style="margin: 0 10px; color: black; none;">Contact</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

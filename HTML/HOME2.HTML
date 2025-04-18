@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sweet Scoops - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+ <style>
+
+
+
+    #rightMessage {
+      display: none;
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: #e7f3fe;
+      color: #31708f;
+      padding: 15px 20px;
+      border: 1px solid #bce8f1;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      font-family: Arial, sans-serif;
+    }
+
+    #showButton {
+      margin: 50px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+
+
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 18px;
+  font-size: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+  animation: floaty 2s ease-in-out infinite;
+}
+@keyframes floaty {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+#topBtn:hover {
+  background-color: #e84118;
+}
+
+@keyframes drip {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+.melting {
+  color: black;
+  font-family: 'Comic Sans MS', cursive;
+  text-shadow: 2px 2px #ffe;
+  animation: drip 2s infinite ease-in-out;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="bg-pink-50">
+
+    <nav class="bg-pink-300 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">🍦 Sweet Scoops</h1>
+        <ul class="flex space-x-4">
+
+            <li><a href="Home.html" class="hover:underline">Home</a></li>
+          
+            <li><a href="menu.html" class="hover:underline">Menu</a></li>
+            <li><a href="cart.html" class="hover:underline">Check Cart</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+          
+        </ul>
+      </nav>
+      
+  <section class="text-center py-20 bg-pink-100">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Sweet Scoops 🍧</h2>
+    <p class="melting">Delicious Homemade Ice-Cream, Made With Love.</p>
+<br>
+<br>
+
+
+
+
+<section style="padding: 70px 40px; background-color: #ffc6fa;">
+    <h2 style="text-align: center; font-size: 5em;
+      font-family: 'Times New Roman'; serif; margin-bottom: 50px; color: red;">Our Sweet Collection</h2>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="download (2).jpg" alt="Delicious Scoop" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="download (3).jpg" alt="Yummy Dessert" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="download (4).jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="download.jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="images (1).jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="images (2).jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()" >
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="images (3).jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="images (4).jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="images (5).jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+
+
+        <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="images.jpg" alt="Sweet Treat" style="width: 100%; height: auto;" onclick="showRightMessage()">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<div id="loader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:white;z-index:1000;display:flex;align-items:center;justify-content:center;">
+  <img src="_" alt="Loading..." style="width:100px;">
+</div>
+<script>
+  window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+  });
+</script>
+
+
+
+
+
+
+<button onclick="topFunction()" id="topBtn" style="display:none;">⬆ Top</button>
+<script>
+  window.onscroll = function() {
+    document.getElementById("topBtn").style.display = 
+      (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
+        ? "block" : "none";
+  };
+
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+  
+<script>
+  function showRightMessage() {
+    // Check if the message element already exists
+    let existingMsg = document.getElementById('rightMessage');
+    if (existingMsg) {
+      existingMsg.style.display = 'block';
+    } else {
+      // Create the message div
+      const messageDiv = document.createElement('div');
+      messageDiv.id = 'rightMessage';
+      messageDiv.textContent = 'Product added into cart';
+
+      // Style the div
+      Object.assign(messageDiv.style, {
+        position: 'fixed',
+        top: '50%',
+        right: '20px',
+        transform: 'translateY(-50%)',
+        backgroundColor: '#e7f3fe',
+        color: '#31708f',
+        padding: '15px 20px',
+        border: '1px solid #bce8f1',
+        borderRadius: '5px',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
+        fontFamily: 'Arial, sans-serif',
+        display: 'block',
+        zIndex: 1000
+      });
+
+      // Append to body
+      document.body.appendChild(messageDiv);
+    }
+
+    
+    setTimeout(() => {
+      const msg = document.getElementById('rightMessage');
+      if (msg) msg.style.display = 'none';
+    }, 3000);
+  }
+</script>
+
+ <a onclick="CheckBill()" 
+    href="cart.html" class="bg-pink-400 text-white px-6 py-2 rounded hover:bg-pink-500">Check Bill</a>
+  </section>
+<script>
+  function CheckBill()
+  {
+   Bill is Added into your Cart
+  }
+</script>
+<script src="images (2).jpg"></script>
+
+<script>
+  document.addEventListener("click", function(e) {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight }
+    });
+  });
+</script>
+
+
+
+<script>
+  setInterval(() => {
+    const emoji = document.createElement("div");
+    emoji.innerText = "🍦";
+    emoji.style.position = "absolute";
+    emoji.style.left = Math.random() * 100 + "vw";
+    emoji.style.fontSize = "24px";
+    emoji.style.top = "100vh";
+    emoji.style.transition = "top 4s linear, opacity 4s";
+    document.body.appendChild(emoji);
+    setTimeout(() => emoji.style.top = "0vh", 100);
+    setTimeout(() => emoji.style.opacity = "0", 2000);
+    setTimeout(() => emoji.remove(), 4000);
+  }, 1500);
+</script>
+<script>
+  setInterval(() => {
+    const emoji = document.createElement("div");
+    emoji.innerText = "🌟";
+    emoji.style.position = "absolute";
+    emoji.style.left = Math.random() * 100 + "vw";
+    emoji.style.fontSize = "24px";
+    emoji.style.top = "100vh";
+    emoji.style.transition = "top 4s linear, opacity 4s";
+    document.body.appendChild(emoji);
+    setTimeout(() => emoji.style.top = "0vh", 100);
+    setTimeout(() => emoji.style.opacity = "0", 2000);
+    setTimeout(() => emoji.remove(), 4000);
+  }, 1500);
+</script>
+
+
+
+<footer style="background-color: #f8f8f8;
+ padding: 20px 0;
+ text-align: center;
+ color: #333;
+ border-top: 1px solid #ddd;
+ margin-top: 50px;">
+    <div style="max-width: 1000px; margin: auto;">
+        <p style="margin: 5px 0;">&copy; 2025 <strong>Sweet Scoops</strong>. All rights reserved.</p>
+        <p style="margin: 5px 0;">Created by <strong>Kinza Tanweer</strong> – Student of <strong>Gujrat University, Main Campus</strong>.</p>
+        <p style="margin: 5px 0; font-size: 14px;">This website is a part of a university project.</p>
+        
+
+        <div style="margin-top: 10px;">
+            <a href="facebook.pdf" style="margin: 0 10px; color: black;  none;">Facebook</a>
+            <a href="Instagram.pdf" style="margin: 0 10px; color: black;: none;">Instagram</a> 
+            <a href="contact.pdf" style="margin: 0 10px; color: black; none;">Contact</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
